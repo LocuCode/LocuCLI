@@ -1,11 +1,13 @@
-builds:
-  - binary: locu
-    goos: 
-      - darwin
-      - linux
-    goarch:
-      - amd64
-      - arm64
+build:
+  goos:
+    - windows
+    - darwin
+    - linux
+  goarch:
+    - amd64
+    - arm
+    - arm64
+    - 386
     env:
       - CGO_ENABLED=0
     flags:
