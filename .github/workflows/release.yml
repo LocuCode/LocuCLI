@@ -15,7 +15,7 @@ jobs:
   goreleaser:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.2.0
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - run: git fetch --force --tags
@@ -28,7 +28,7 @@ jobs:
       - uses: goreleaser/goreleaser-action@v2
         with:
           distribution: goreleaser
-          version: v0.3
+          version: v0.5
           args: release --rm-dist
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLISHER_TOKEN }}
