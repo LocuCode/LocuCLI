@@ -25,7 +25,7 @@ brews:
       owner: locu-anup
       name: homebrew-locu
     commit_author:
-      name: anup
+      name: locu-anup
       email: anup@locu.io
 
 checksum:
