@@ -14,3 +14,10 @@ go build -o helloworld
  # important links
  https://github.com/spf13/cobra
  https://www.youtube.com/watch?v=IOVBSVox1lM
+
+
+### to package dependency in source code run
+ go mod vendor
+
+###  build options
+https://goreleaser.com/customization/build/?h=builds
