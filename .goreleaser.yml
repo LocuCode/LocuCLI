@@ -22,7 +22,7 @@ brews:
     name: locu
     homepage: https://github.com/LocuCode/LocuCLI
     tap:
-      owner: anupsingh
+      owner: locu-anup
       name: homebrew-locu
     commit_author:
       name: anup
