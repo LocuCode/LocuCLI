@@ -1,32 +1,11 @@
 builds:
-  # GOOS list to build for.
-    # For more info refer to: https://golang.org/doc/install/source#environment
-    # Defaults are darwin, linux, and windows.
+  - binary: locu
     goos:
-      - freebsd
-      - windows
-
-    # GOARCH to build for.
-    # For more info refer to: https://golang.org/doc/install/source#environment
-    # Defaults are 386, amd64 and arm64.
+      - darwin
+      - linux
     goarch:
       - amd64
-      - arm
       - arm64
-
-    # GOARM to build for when GOARCH is arm.
-    # For more info refer to: https://golang.org/doc/install/source#environment
-    # Default is only 6.
-    goarm:
-      - 6
-      - 7
-
-    # GOAMD64 to build when GOARCH is amd64.
-    # For more info refer to: https://golang.org/doc/install/source#environment
-    # Default is only v1.
-    goamd64:
-      - v2
-      - v3
     env:
       - CGO_ENABLED=0
     flags:
@@ -38,15 +17,15 @@ release:
 universal_binaries:
   - replace: true
 
-brews
-  - 
+brews:
+  -
     name: locu
     homepage: https://github.com/LocuCode/LocuCLI
     tap:
-      owner: locu
+      owner: anupsingh
       name: homebrew-locu
     commit_author:
-      name: anupsingh
+      name: anup
       email: anup@locu.io
 
 checksum:
