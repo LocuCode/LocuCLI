@@ -29,3 +29,16 @@ Push `git push origin v0.1`
 
 ### used following video for bootstraping 
 https://www.youtube.com/watch?v=IOVBSVox1lM
+
+### brew tap 
+`brew tap locu-anup/homebrew-locu`
+
+### brew install 
+`brew install locu-anup/locu/locu`
+
+### then run
+`locuCLI` it should print
+"Hello, World"
+`locuCLI -d` should print
+"Hello, world, alternative"                           
+
